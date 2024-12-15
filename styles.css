@@ -23,6 +23,38 @@
     background: #0056c1;
     transform: translateY(-3px);
 }
+/* Snowflakes Container */
+#snowflake-container {
+    position: fixed; /* Tetap di layar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Agar tidak mengganggu interaksi pengguna */
+    z-index: 0; /* Letakkan di belakang konten utama */
+    overflow: hidden; /* Hindari scroll akibat salju */
+}
+
+/* Snowflake Styling */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    color: #0073ff; /* Warna biru muda */
+    font-size: 1em;
+    opacity: 0.8;
+    animation: fall linear infinite;
+    pointer-events: none; /* Tidak bisa diklik */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
 
 /* Icon Styling */
 .icon {
