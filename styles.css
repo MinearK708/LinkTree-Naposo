@@ -1,22 +1,23 @@
 /* Link Styling */
+/* Link Styling */
 .link {
-    display: flex;
-    align-items: center; /* Vertikal sejajar */
-    justify-content: center; /* Tengah secara horizontal */
-    gap: 10px; /* Jarak antara ikon dan teks */
-    margin: 15px 0;
-    padding: 15px;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    background: #0073ff;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    text-align: center;
-    flex-wrap: nowrap; /* Mencegah wrapping teks */
-    white-space: nowrap; /* Menjaga teks tetap dalam 1 baris */
-    overflow: hidden; /* Potong teks berlebih */
-    text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px auto; /* Center the link vertically */
+  padding: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  background: #0073ff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-align: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .link:hover {
