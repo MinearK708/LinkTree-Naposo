@@ -13,37 +13,38 @@
     margin: 0 auto;
 }
 
-/* Styling Snowflakes */
+/* Snowflakes Container */
 #snowflake-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;
+    pointer-events: none; /* Tidak mengganggu interaksi */
     z-index: 0;
-    overflow: hidden;
+    overflow: hidden; /* Hindari scroll akibat salju */
 }
 
+/* Snowflake Styling */
 .snowflake {
     position: absolute;
     top: -10px;
-    left: 0;
-    color: #0073ff;
-    font-size: 0.8em; /* Ukuran lebih kecil */
+    color: #0073ff; /* Warna biru muda */
+    font-size: 0.5em; /* Ukuran default lebih kecil */
     opacity: 0.7;
     animation: fall linear infinite;
-    pointer-events: none;
+    pointer-events: none; /* Tidak bisa diklik */
 }
 
 @keyframes fall {
     0% {
-        transform: translateY(0) rotate(0deg);
+        transform: translateY(0) rotate(0deg); /* Mulai dari atas */
     }
     100% {
-        transform: translateY(100vh) rotate(360deg);
+        transform: translateY(100vh) rotate(360deg); /* Jatuh ke bawah dengan rotasi */
     }
 }
+
 
 /* Link Styling */
 .link {
