@@ -12,9 +12,18 @@ body {
     background: linear-gradient(135deg, #f9f9f9, #d6eaff);
     color: #333;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Snowflakes Container */
+#snowflake-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* So clicks pass through */
+    z-index: 1;
 }
 
 /* Container Styling */
@@ -25,6 +34,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 2; /* Above snowflakes */
 }
 
 /* Heading Styling */
@@ -36,7 +48,9 @@ h1 {
 
 /* Button/Link Styling */
 .link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 15px 0;
     padding: 15px;
     font-size: 18px;
@@ -52,9 +66,31 @@ h1 {
     transform: translateY(-3px);
 }
 
+/* Icon Styling */
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
 /* Footer Styling */
 .footer {
     margin-top: 20px;
     font-size: 12px;
     color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    .link {
+        font-size: 16px;
+        padding: 12px;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
 }
