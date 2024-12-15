@@ -1,0 +1,60 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #f9f9f9, #d6eaff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Heading Styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #0073ff;
+}
+
+/* Button/Link Styling */
+.link {
+    display: block;
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: #0073ff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    background: #0056c1;
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
